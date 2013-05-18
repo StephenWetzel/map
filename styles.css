@@ -1,0 +1,45 @@
+html, body { 
+	height:100%; 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden; 
+}
+	
+div { 
+	margin: 0; 
+	padding: 0;  
+}
+
+#divClear {
+	clear: both;
+}
+
+#divHeader, #divFooter {
+	width: 100%;
+	background-color: #708090;	
+}
+
+#divHeader {
+	height: 100px;
+}
+
+#divFooter {
+	height: 50px;
+}
+
+#divMap {
+	float: left;
+	width: 75%;	
+	background-color: #fff;
+}
+
+#divRight {
+	float: right;
+	width: 25%;	
+	background-color: #C0C0C0;
+	overflow-y: auto;
+}
+
+#divRightBody {
+	font-size: 10pt;
+}

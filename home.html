@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADK Map</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<link rel="stylesheet" href="styles.css" />
+	 <!--[if lte IE 8]>
+		 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+	 <![endif]-->
+	
+	<script src="leaflet.js"></script> 	
+	<script src="viewport.js"></script>
+	<script src="poi.js"></script>
+	<script src="leaflet-providers.js">//terrain</script> 
+	
+</head>
+<body>
+
+<div id="divPageContainer">
+	<div id="divHeader">
+		Highpointers of Odin: Map Man
+	</div>
+	<div id="divBody">
+		<div id="divMap"></div>
+		<div id="divRight">
+			<div id="divRightHeader">
+				Planned Route: <input type="button" value="Clear" onclick="clearRoute()">
+			</div>
+			<div id="divRightBody"></div>
+		</div>
+	</div>
+	<div id="divClear"></div>
+	<div id="divFooter">
+		Footer
+	</div>
+</div>
+	
+	<script>
+		//Size map and right div
+		document.getElementById('divMap').setAttribute("style","height:" + (window.innerHeight - 150) + "px;");
+		document.getElementById('divRight').setAttribute("style","height:" + (window.innerHeight - 150) + "px;");
+	</script>	
+
+	<script src="map.js"></script>
+	<script src="logic.js"></script>
+	<script src="routes.js"></script>
+	<script src="shortcuts.js"></script>
+	
+</body>
+</html>	
